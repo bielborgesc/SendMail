@@ -13,5 +13,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(amb.root)
+
+        amb.cleanBt.setOnClickListener {
+            with (amb){
+                toEt.setText("")
+                ccEt.setText("")
+                bccEt.setText("")
+                subjectEt.setText("")
+                messageEt.setText("")
+            }
+        }
+
+        
+
     }
 }
